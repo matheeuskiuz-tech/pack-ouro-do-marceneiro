@@ -133,22 +133,8 @@ export default function App() {
                 __html: `<wistia-player 
                   media-id="ent6sqp83n" 
                   aspect="0.5625" 
-                  playbar="false" 
-                  play-button="false" 
-                  small-play-button="false" 
-                  volume-control="false" 
-                  fullscreen-button="false" 
-                  settings-control="false" 
-                  captions-control="false" 
-                  playback-rate-control="false"
-                  quality-control="false"
-                  copy-link-and-thumbnail="false"
-                  do-not-track="true"
-                  resumable="false"
-                  mini-player="false"
-                  controls-visible-on-load="false"
-                  big-play-button="false"
-                  focus="false"
+                  play-button="true"
+                  controls-visible-on-load="true"
                 ></wistia-player>` 
               }}
             />
@@ -286,6 +272,19 @@ export default function App() {
         </div>
       </section>
 
+      {/* Guarantee Section */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-4xl mx-auto bg-zinc-50 p-6 rounded-3xl border border-zinc-200 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+          <ShieldCheck className="w-24 h-24 text-blue-600 shrink-0" />
+          <div>
+            <h2 className="text-2xl font-black mb-3 text-zinc-900">Risco Zero: 7 Dias de Garantia</h2>
+            <p className="text-zinc-600 leading-relaxed font-medium text-sm">
+              Teste todos os projetos e arquivos. Se você abrir o pacote e concluir que o material não facilitou o trabalho do seu dia a dia, mande apenas um e-mail. Nós extornaremos o seu pequeno investimento de R$10 ou R$27 totalmente. Você literalmente não perde nada tentando.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="py-12 px-4 bg-zinc-50" id="pricing">
         <div className="max-w-6xl mx-auto">
@@ -372,19 +371,6 @@ export default function App() {
                 👉 GARANTIR ACESSO BÁSICO POR R$10,00
               </button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Guarantee Section */}
-      <section className="py-12 px-4 bg-white">
-        <div className="max-w-4xl mx-auto bg-zinc-50 p-6 rounded-3xl border border-zinc-200 flex flex-col md:flex-row items-center gap-6 shadow-sm">
-          <ShieldCheck className="w-24 h-24 text-blue-600 shrink-0" />
-          <div>
-            <h2 className="text-2xl font-black mb-3 text-zinc-900">Risco Zero: 7 Dias de Garantia</h2>
-            <p className="text-zinc-600 leading-relaxed font-medium text-sm">
-              Teste todos os projetos e arquivos. Se você abrir o pacote e concluir que o material não facilitou o trabalho do seu dia a dia, mande apenas um e-mail. Nós extornaremos o seu pequeno investimento de R$10 ou R$27 totalmente. Você literalmente não perde nada tentando.
-            </p>
           </div>
         </div>
       </section>
